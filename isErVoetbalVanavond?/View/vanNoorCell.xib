@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vanNoor" rowHeight="207" id="Aw8-DK-hUi" customClass="Ad" customModule="isErVoetbalVanavond_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="534" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aw8-DK-hUi" id="5RX-Yr-QeT">
+                <rect key="frame" x="0.0" y="0.0" width="534" height="206.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ena-dh-v7b">
+                        <rect key="frame" x="8" y="0.0" width="518" height="160"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qYL-aV-gdf">
+                            <rect key="frame" x="0.0" y="0.0" width="518" height="160"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vanNoorPNG" translatesAutoresizingMaskIntoConstraints="NO" id="iVQ-fP-fpu">
+                                    <rect key="frame" x="0.0" y="0.0" width="518" height="160"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zay-A0-yYg">
+                                    <rect key="frame" x="0.0" y="0.0" width="518" height="160"/>
+                                    <connections>
+                                        <action selector="Button:" destination="Aw8-DK-hUi" eventType="touchUpInside" id="UP1-IZ-6Be"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="iVQ-fP-fpu" firstAttribute="top" secondItem="qYL-aV-gdf" secondAttribute="top" id="EE5-VY-JaO"/>
+                                <constraint firstAttribute="bottom" secondItem="Zay-A0-yYg" secondAttribute="bottom" id="LQU-Y8-MdJ"/>
+                                <constraint firstAttribute="trailing" secondItem="iVQ-fP-fpu" secondAttribute="trailing" id="Rg2-Oo-2Nl"/>
+                                <constraint firstItem="iVQ-fP-fpu" firstAttribute="leading" secondItem="qYL-aV-gdf" secondAttribute="leading" id="a3m-gN-37N"/>
+                                <constraint firstItem="Zay-A0-yYg" firstAttribute="leading" secondItem="qYL-aV-gdf" secondAttribute="leading" id="aal-BC-zZP"/>
+                                <constraint firstAttribute="bottom" secondItem="iVQ-fP-fpu" secondAttribute="bottom" id="dyc-Ew-uxH"/>
+                                <constraint firstItem="Zay-A0-yYg" firstAttribute="top" secondItem="qYL-aV-gdf" secondAttribute="top" id="hNx-Ll-eXM"/>
+                                <constraint firstAttribute="trailing" secondItem="Zay-A0-yYg" secondAttribute="trailing" id="nXu-WE-J2A"/>
+                            </constraints>
+                        </view>
+                        <color key="backgroundColor" red="0.78823529411764703" green="0.80784313725490198" blue="0.96862745098039216" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="Cgm-MS-aJy"/>
+                        </constraints>
+                        <blurEffect style="light"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </visualEffectView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ena-dh-v7b" firstAttribute="top" secondItem="5RX-Yr-QeT" secondAttribute="top" id="LEZ-Ff-MnT"/>
+                    <constraint firstAttribute="trailing" secondItem="ena-dh-v7b" secondAttribute="trailing" constant="8" id="Rh8-Id-Uto"/>
+                    <constraint firstItem="ena-dh-v7b" firstAttribute="leading" secondItem="5RX-Yr-QeT" secondAttribute="leading" constant="8" id="a2o-D3-Sq6"/>
+                    <constraint firstAttribute="bottom" secondItem="ena-dh-v7b" secondAttribute="bottom" id="sgH-n8-TZ0"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="20"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-955.07246376811599" y="-89.397321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="vanNoorPNG" width="2362" height="2362"/>
+    </resources>
+</document>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fbr-ml-pXY">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="O8S-WG-ZpF">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Fbr-ml-pXY" customClass="PageViewController" customModule="isErVoetbalVanavond_" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0w-5o-Yot" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-700"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="2" id="BYZ-38-t0r" customClass="ViewController" customModule="isErVoetbalVanavond_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stadium 2" translatesAutoresizingMaskIntoConstraints="NO" id="f6h-8w-EVj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D39-FY-gYF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell 1" id="SLc-9P-3KH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SLc-9P-3KH" id="HjA-0d-sOM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="srg-s5-OER"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Gns-b5-vXM"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jGR-d4-aWO">
+                                <rect key="frame" x="194" y="49" width="165" height="29"/>
+                                <segments>
+                                    <segment title="Alles"/>
+                                    <segment title="Mijn Teams"/>
+                                </segments>
+                                <color key="tintColor" red="0.92371913765426406" green="0.95916660006500398" blue="1" alpha="0.83657962330000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="selector:" destination="BYZ-38-t0r" eventType="valueChanged" id="e6Y-Zp-K1r"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D39-FY-gYF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4qk-Ap-P6L"/>
+                            <constraint firstItem="D39-FY-gYF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9cy-0U-d14"/>
+                            <constraint firstItem="D39-FY-gYF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BT8-nA-sMy"/>
+                            <constraint firstItem="D39-FY-gYF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Md9-Se-nwI"/>
+                            <constraint firstItem="f6h-8w-EVj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NeG-I9-eSk"/>
+                            <constraint firstItem="D39-FY-gYF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OEn-bS-ire"/>
+                            <constraint firstAttribute="bottom" secondItem="D39-FY-gYF" secondAttribute="bottom" id="ReO-bM-HoG"/>
+                            <constraint firstAttribute="bottom" secondItem="D39-FY-gYF" secondAttribute="bottom" id="XJe-oJ-ImT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jGR-d4-aWO" secondAttribute="trailing" constant="16" id="dTf-b1-qy9"/>
+                            <constraint firstAttribute="bottom" secondItem="f6h-8w-EVj" secondAttribute="bottom" id="giz-be-zAl"/>
+                            <constraint firstAttribute="trailing" secondItem="f6h-8w-EVj" secondAttribute="trailing" id="hQv-j9-yQx"/>
+                            <constraint firstItem="f6h-8w-EVj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jk1-2o-9bh"/>
+                            <constraint firstItem="jGR-d4-aWO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="kRl-Xl-F6S"/>
+                            <constraint firstAttribute="trailing" secondItem="D39-FY-gYF" secondAttribute="trailing" id="omo-NK-SFf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="f6h-8w-EVj" id="0dW-Iv-e96"/>
+                        <outlet property="tableView" destination="D39-FY-gYF" id="whx-d4-Gkk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="-18.472906403940886"/>
+        </scene>
+        <!--Club View Controller-->
+        <scene sceneID="KVH-43-Num">
+            <objects>
+                <viewController storyboardIdentifier="3" id="w5w-NR-Oub" customClass="ClubViewController" customModule="isErVoetbalVanavond_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ujl-s0-Sc8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stadium 3" translatesAutoresizingMaskIntoConstraints="NO" id="PRA-Yd-d7u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="39" sectionFooterHeight="39" translatesAutoresizingMaskIntoConstraints="NO" id="gSd-MP-xr4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" barStyle="blackTranslucent" searchBarStyle="minimal" placeholder="Zoek club..." showsCancelButton="YES" id="seO-zy-ZMQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="w5w-NR-Oub" id="3wo-eP-qeG"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jt5-Lf-2UG">
+                                        <rect key="frame" x="0.0" y="95" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jt5-Lf-2UG" id="5py-Xa-bMl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="w5w-NR-Oub" id="XBK-qd-qfW"/>
+                                    <outlet property="delegate" destination="w5w-NR-Oub" id="baO-ca-yRL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gSd-MP-xr4" firstAttribute="top" secondItem="ujl-s0-Sc8" secondAttribute="top" id="2dm-RU-o2b"/>
+                            <constraint firstItem="gSd-MP-xr4" firstAttribute="trailing" secondItem="HNr-cp-rb9" secondAttribute="trailing" id="36Q-td-eoI"/>
+                            <constraint firstAttribute="bottom" secondItem="gSd-MP-xr4" secondAttribute="bottom" id="4w3-eb-aul"/>
+                            <constraint firstItem="PRA-Yd-d7u" firstAttribute="leading" secondItem="HNr-cp-rb9" secondAttribute="leading" id="BUI-HS-4Ij"/>
+                            <constraint firstItem="PRA-Yd-d7u" firstAttribute="top" secondItem="ujl-s0-Sc8" secondAttribute="top" id="W8W-df-ZY4"/>
+                            <constraint firstItem="gSd-MP-xr4" firstAttribute="leading" secondItem="HNr-cp-rb9" secondAttribute="leading" id="Y1r-Qp-Ivp"/>
+                            <constraint firstAttribute="bottom" secondItem="PRA-Yd-d7u" secondAttribute="bottom" id="bxj-aH-lg3"/>
+                            <constraint firstItem="PRA-Yd-d7u" firstAttribute="trailing" secondItem="HNr-cp-rb9" secondAttribute="trailing" id="gHw-1H-MJF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HNr-cp-rb9"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="PRA-Yd-d7u" id="XGD-kE-jDK"/>
+                        <outlet property="searchBar" destination="seO-zy-ZMQ" id="kV5-rX-Dgq"/>
+                        <outlet property="tableView" destination="gSd-MP-xr4" id="1MC-a8-dtc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25K-eG-PKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="-18.472906403940886"/>
+        </scene>
+        <!--Zenders View Controller-->
+        <scene sceneID="0sw-Sw-AIp">
+            <objects>
+                <viewController storyboardIdentifier="1" id="WEW-b7-AXj" customClass="ZendersViewController" customModule="isErVoetbalVanavond_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8uu-7j-dgV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stadium 1" translatesAutoresizingMaskIntoConstraints="NO" id="qsg-0p-jYl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dr-TV-b2K">
+                                <rect key="frame" x="40.666666666666657" y="246" width="294" height="320"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZiggoSportTotaal" translatesAutoresizingMaskIntoConstraints="NO" id="Tkt-Kd-y55">
+                                        <rect key="frame" x="191" y="8" width="95" height="95"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="95" id="2sI-go-NHF"/>
+                                            <constraint firstAttribute="width" constant="95" id="DoK-Zo-dRA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fox Sport Eredivisie" translatesAutoresizingMaskIntoConstraints="NO" id="ic8-BE-wit">
+                                        <rect key="frame" x="7" y="178" width="95" height="95"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="95" id="QKt-FE-wsR"/>
+                                            <constraint firstAttribute="width" constant="95" id="aX2-gl-IpE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fox Sports Internationaal" translatesAutoresizingMaskIntoConstraints="NO" id="Dis-R2-9dg">
+                                        <rect key="frame" x="191" y="178" width="95" height="95"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="95" id="4nt-Fb-XpN"/>
+                                            <constraint firstAttribute="width" constant="95" id="bw8-ga-qDd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZiggoSport" translatesAutoresizingMaskIntoConstraints="NO" id="N9G-Rc-spO">
+                                        <rect key="frame" x="7" y="8" width="95" height="95"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.62952161815068497" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="H7R-Sd-j9m"/>
+                                            <constraint firstAttribute="height" constant="95" id="WMX-3a-6Ei"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8j-TL-vfd">
+                                        <rect key="frame" x="30.000000000000007" y="111" width="50.999999999999993" height="31"/>
+                                        <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="ziggoSportSwitch:" destination="WEW-b7-AXj" eventType="valueChanged" id="vta-wZ-7xN"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fg6-uB-4m2">
+                                        <rect key="frame" x="214" y="281" width="51" height="31"/>
+                                        <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="FoxSportsInternationaalSwitch:" destination="WEW-b7-AXj" eventType="valueChanged" id="0XS-YX-XCH"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IC-O4-vSr">
+                                        <rect key="frame" x="214" y="111" width="51" height="31"/>
+                                        <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="ziggoSportTotaalSwitch:" destination="WEW-b7-AXj" eventType="valueChanged" id="YjP-5I-KFV"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMw-if-f7h">
+                                        <rect key="frame" x="30.000000000000007" y="281" width="50.999999999999993" height="31"/>
+                                        <color key="onTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="FoxSportsEredivisieSwitch:" destination="WEW-b7-AXj" eventType="valueChanged" id="sNq-35-wVj"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fg6-uB-4m2" firstAttribute="top" secondItem="Dis-R2-9dg" secondAttribute="bottom" constant="8" id="2O9-J7-CXN"/>
+                                    <constraint firstItem="ic8-BE-wit" firstAttribute="leading" secondItem="4dr-TV-b2K" secondAttribute="leading" constant="7" id="35K-qL-dUN"/>
+                                    <constraint firstAttribute="height" constant="320" id="8N9-hQ-Y0Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dis-R2-9dg" secondAttribute="trailing" constant="8" id="8TX-Fe-AcA"/>
+                                    <constraint firstItem="N9G-Rc-spO" firstAttribute="top" secondItem="4dr-TV-b2K" secondAttribute="top" constant="8" id="IXn-Ee-Dew"/>
+                                    <constraint firstAttribute="width" constant="294" id="LXh-uL-iz6"/>
+                                    <constraint firstAttribute="bottom" secondItem="fg6-uB-4m2" secondAttribute="bottom" constant="8" id="LpC-QH-sPr"/>
+                                    <constraint firstAttribute="bottom" secondItem="GMw-if-f7h" secondAttribute="bottom" constant="8" id="R2y-Gt-JGe"/>
+                                    <constraint firstItem="Y8j-TL-vfd" firstAttribute="top" secondItem="N9G-Rc-spO" secondAttribute="bottom" constant="8" id="SeT-ye-tWk"/>
+                                    <constraint firstItem="Tkt-Kd-y55" firstAttribute="top" secondItem="4dr-TV-b2K" secondAttribute="top" constant="8" id="TuH-x4-doJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fg6-uB-4m2" secondAttribute="trailing" constant="31" id="Uma-08-oVU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tkt-Kd-y55" secondAttribute="trailing" constant="8" id="Xbk-23-rrh"/>
+                                    <constraint firstItem="GMw-if-f7h" firstAttribute="top" secondItem="ic8-BE-wit" secondAttribute="bottom" constant="8" id="dlY-hV-Apl"/>
+                                    <constraint firstItem="N9G-Rc-spO" firstAttribute="leading" secondItem="4dr-TV-b2K" secondAttribute="leading" constant="7" id="ecT-7B-IrF"/>
+                                    <constraint firstItem="5IC-O4-vSr" firstAttribute="top" secondItem="Tkt-Kd-y55" secondAttribute="bottom" constant="8" id="g11-bW-Q6n"/>
+                                    <constraint firstItem="GMw-if-f7h" firstAttribute="leading" secondItem="4dr-TV-b2K" secondAttribute="leading" constant="30" id="gMN-JE-ZHE"/>
+                                    <constraint firstAttribute="trailing" secondItem="5IC-O4-vSr" secondAttribute="trailing" constant="31" id="oqs-8A-M23"/>
+                                    <constraint firstItem="Y8j-TL-vfd" firstAttribute="leading" secondItem="4dr-TV-b2K" secondAttribute="leading" constant="30" id="xV0-IJ-Jgt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qsg-0p-jYl" firstAttribute="top" secondItem="8uu-7j-dgV" secondAttribute="top" id="8Eh-VT-TU9"/>
+                            <constraint firstItem="4dr-TV-b2K" firstAttribute="centerY" secondItem="8uu-7j-dgV" secondAttribute="centerY" id="JAm-Mi-0oT"/>
+                            <constraint firstItem="qsg-0p-jYl" firstAttribute="trailing" secondItem="9WQ-f2-Dgf" secondAttribute="trailing" id="Tg5-MB-a6C"/>
+                            <constraint firstAttribute="bottom" secondItem="qsg-0p-jYl" secondAttribute="bottom" id="f0W-Qt-Q2v"/>
+                            <constraint firstItem="4dr-TV-b2K" firstAttribute="centerX" secondItem="8uu-7j-dgV" secondAttribute="centerX" id="vYE-aG-HbF"/>
+                            <constraint firstItem="qsg-0p-jYl" firstAttribute="leading" secondItem="9WQ-f2-Dgf" secondAttribute="leading" id="xwC-2G-K9b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9WQ-f2-Dgf"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="qsg-0p-jYl" id="TwB-8w-bN0"/>
+                        <outlet property="foxSportsEredivisieSwitch" destination="GMw-if-f7h" id="NHz-UE-d4i"/>
+                        <outlet property="foxSportsInternationaalSwitch" destination="fg6-uB-4m2" id="C22-eF-FB5"/>
+                        <outlet property="ziggoSportSwitch" destination="Y8j-TL-vfd" id="dHb-cT-aVK"/>
+                        <outlet property="ziggoSportTotaalSwitch" destination="5IC-O4-vSr" id="XGm-dS-bIz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwK-73-CVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634.39999999999998" y="-17.733990147783253"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fox Sport Eredivisie" width="958" height="582"/>
+        <image name="Fox Sports Internationaal" width="1018" height="570"/>
+        <image name="Stadium 1" width="2080" height="4160"/>
+        <image name="Stadium 2" width="2079" height="4160"/>
+        <image name="Stadium 3" width="2080" height="4160"/>
+        <image name="ZiggoSport" width="431" height="430"/>
+        <image name="ZiggoSportTotaal" width="431" height="430"/>
+    </resources>
+</document>

@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F110483220470CC00B3527B /* ClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F110482220470CC00B3527B /* ClubViewController.swift */; };
 		4F2552F021DFE8640068E43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2552EF21DFE8640068E43B /* AppDelegate.swift */; };
 		4F2552F221DFE8640068E43B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2552F121DFE8640068E43B /* ViewController.swift */; };
 		4F2552F521DFE8640068E43B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2552F321DFE8640068E43B /* Main.storyboard */; };
 		4F2552F721DFE8650068E43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2552F621DFE8650068E43B /* Assets.xcassets */; };
 		4F2552FA21DFE8650068E43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F2552F821DFE8650068E43B /* LaunchScreen.storyboard */; };
+		4F3066E221E38A35006B8196 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3066E021E38A35006B8196 /* TableViewCell.swift */; };
+		4F3066E321E38A35006B8196 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F3066E121E38A35006B8196 /* TableViewCell.xib */; };
+		4F3066E721E4E068006B8196 /* Logos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3066E621E4E068006B8196 /* Logos.swift */; };
+		4F74231221F105870016090F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74231121F105870016090F /* PageViewController.swift */; };
+		4F8FF7782215A4360034F80B /* CellForClubNamen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8FF7772215A4360034F80B /* CellForClubNamen.swift */; };
+		4F8FF77A2215A74F0034F80B /* CellForClubNamen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8FF7792215A74F0034F80B /* CellForClubNamen.xib */; };
+		4FE22C5721F2125100CA247C /* ZendersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE22C5621F2125100CA247C /* ZendersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F110482220470CC00B3527B /* ClubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubViewController.swift; sourceTree = "<group>"; };
 		4F2552EC21DFE8640068E43B /* isErVoetbalVanavond?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "isErVoetbalVanavond?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2552EF21DFE8640068E43B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F2552F121DFE8640068E43B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,13 @@
 		4F2552F621DFE8650068E43B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F2552F921DFE8650068E43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F2552FB21DFE8650068E43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F3066E021E38A35006B8196 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4F3066E121E38A35006B8196 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		4F3066E621E4E068006B8196 /* Logos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logos.swift; sourceTree = "<group>"; };
+		4F74231121F105870016090F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4F8FF7772215A4360034F80B /* CellForClubNamen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForClubNamen.swift; sourceTree = "<group>"; };
+		4F8FF7792215A74F0034F80B /* CellForClubNamen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForClubNamen.xib; sourceTree = "<group>"; };
+		4FE22C5621F2125100CA247C /* ZendersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZendersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,54 @@
 		4F2552EE21DFE8640068E43B /* isErVoetbalVanavond? */ = {
 			isa = PBXGroup;
 			children = (
-				4F2552EF21DFE8640068E43B /* AppDelegate.swift */,
-				4F2552F121DFE8640068E43B /* ViewController.swift */,
-				4F2552F321DFE8640068E43B /* Main.storyboard */,
-				4F2552F621DFE8650068E43B /* Assets.xcassets */,
-				4F2552F821DFE8650068E43B /* LaunchScreen.storyboard */,
-				4F2552FB21DFE8650068E43B /* Info.plist */,
+				4F25530321E283230068E43B /* Controller */,
+				4F25530221E283180068E43B /* View */,
+				4F25530121E283050068E43B /* Model */,
+				4FCA6C2721E2920800A5B4FC /* Supporting files */,
 			);
 			path = "isErVoetbalVanavond?";
+			sourceTree = "<group>";
+		};
+		4F25530121E283050068E43B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F3066E621E4E068006B8196 /* Logos.swift */,
+				4F3066E021E38A35006B8196 /* TableViewCell.swift */,
+				4F8FF7772215A4360034F80B /* CellForClubNamen.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F25530221E283180068E43B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F2552F321DFE8640068E43B /* Main.storyboard */,
+				4F2552F821DFE8650068E43B /* LaunchScreen.storyboard */,
+				4F3066E121E38A35006B8196 /* TableViewCell.xib */,
+				4F8FF7792215A74F0034F80B /* CellForClubNamen.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F25530321E283230068E43B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F2552EF21DFE8640068E43B /* AppDelegate.swift */,
+				4F74231121F105870016090F /* PageViewController.swift */,
+				4F2552F121DFE8640068E43B /* ViewController.swift */,
+				4FE22C5621F2125100CA247C /* ZendersViewController.swift */,
+				4F110482220470CC00B3527B /* ClubViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FCA6C2721E2920800A5B4FC /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				4F2552F621DFE8650068E43B /* Assets.xcassets */,
+				4F2552FB21DFE8650068E43B /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2552FA21DFE8650068E43B /* LaunchScreen.storyboard in Resources */,
+				4F8FF77A2215A74F0034F80B /* CellForClubNamen.xib in Resources */,
+				4F3066E321E38A35006B8196 /* TableViewCell.xib in Resources */,
 				4F2552F721DFE8650068E43B /* Assets.xcassets in Resources */,
 				4F2552F521DFE8640068E43B /* Main.storyboard in Resources */,
 			);
@@ -135,6 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8FF7782215A4360034F80B /* CellForClubNamen.swift in Sources */,
+				4F110483220470CC00B3527B /* ClubViewController.swift in Sources */,
+				4FE22C5721F2125100CA247C /* ZendersViewController.swift in Sources */,
+				4F74231221F105870016090F /* PageViewController.swift in Sources */,
+				4F3066E721E4E068006B8196 /* Logos.swift in Sources */,
+				4F3066E221E38A35006B8196 /* TableViewCell.swift in Sources */,
 				4F2552F221DFE8640068E43B /* ViewController.swift in Sources */,
 				4F2552F021DFE8640068E43B /* AppDelegate.swift in Sources */,
 			);
@@ -284,12 +348,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK368G67LC;
-				INFOPLIST_FILE = "isErVoetbalVanavond?/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/isErVoetbalVanavond?/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TellvandenBergh.isErVoetbalVanavond-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TellvandenBergh.TVoetbalGids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,12 +366,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK368G67LC;
-				INFOPLIST_FILE = "isErVoetbalVanavond?/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/isErVoetbalVanavond?/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TellvandenBergh.isErVoetbalVanavond-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TellvandenBergh.TVoetbalGids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
