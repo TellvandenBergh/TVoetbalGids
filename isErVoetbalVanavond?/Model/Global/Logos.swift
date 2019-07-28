@@ -10,7 +10,6 @@ import Foundation
 
 class Logos {
     
-
     let logoDict = [
         "FC Emmen" : "300px-FC_Emmen_logo",
         "Arsenal" : "580b57fcd9996e24bc43c4df",
@@ -428,5 +427,6 @@ class Logos {
         "Zweden Vrouwen" : "Zweden",
         "Zwitserland" : "Zwitserland",
         "Zwitserland Vrouwen" : "Zwitserland",
+        "FC Basel" : "FC-Basel"
     ]
 }
